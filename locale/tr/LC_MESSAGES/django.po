@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 16:02+0200\n"
+"POT-Creation-Date: 2024-04-01 21:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,47 +18,220 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: quicksand/settings.py:247
+#: quicksand/settings.py:240
 msgid "English"
 msgstr ""
 
-#: quicksand/settings.py:248
+#: quicksand/settings.py:241
 msgid "German"
 msgstr ""
 
-#: quicksand/settings.py:249
+#: quicksand/settings.py:242
 msgid "Turkish"
 msgstr ""
 
-#: quicksand_auth/models.py:17
+#: quicksand_auth/checkers.py:7
+msgid "Wrong password."
+msgstr ""
+
+#: quicksand_auth/models.py:29 quicksand_invitations/models.py:21
 msgid "email address"
 msgstr ""
 
-#: quicksand_auth/models.py:23
+#: quicksand_auth/models.py:35
 msgid "is deleted"
 msgstr ""
 
-#: quicksand_auth/models.py:27
+#: quicksand_auth/models.py:39 quicksand_invitations/models.py:24
 msgid "username"
 msgstr ""
 
-#: quicksand_auth/models.py:32
+#: quicksand_auth/models.py:44 quicksand_invitations/models.py:29
 #, python-format
 msgid ""
 "Required. %(username_max_length)d characters or fewer. Letters, digits and _ "
 "only."
 msgstr ""
 
-#: quicksand_auth/models.py:36
+#: quicksand_auth/models.py:48 quicksand_invitations/models.py:33
 msgid "A user with that username already exists."
 msgstr ""
 
-#: quicksand_auth/models.py:46
+#: quicksand_auth/models.py:58
 msgid "user"
 msgstr ""
 
-#: quicksand_auth/models.py:47
+#: quicksand_auth/models.py:59
 msgid "users"
+msgstr ""
+
+#: quicksand_auth/models.py:67
+msgid "You must confirm you are over 16 years old to make an account"
+msgstr ""
+
+#: quicksand_auth/models.py:72
+msgid "You must accept the guidelines to make an account"
+msgstr ""
+
+#: quicksand_auth/models.py:132
+msgid "Token type does not match"
+msgstr ""
+
+#: quicksand_auth/models.py:139
+msgid "Invalid token signature"
+msgstr ""
+
+#: quicksand_auth/models.py:143
+msgid "Token expired"
+msgstr ""
+
+#: quicksand_auth/models.py:147
+msgid "Failed to decode token"
+msgstr ""
+
+#: quicksand_auth/models.py:151
+msgid "No user found for token"
+msgstr ""
+
+#: quicksand_auth/models.py:155
+msgid "Invalid token"
+msgstr ""
+
+#: quicksand_auth/models.py:172 quicksand_common/models.py:8
+msgid "name"
+msgstr ""
+
+#: quicksand_auth/models.py:177
+msgid "avatar"
+msgstr ""
+
+#: quicksand_auth/models.py:180
+msgid "cover"
+msgstr ""
+
+#: quicksand_auth/models.py:185
+msgid "user profile"
+msgstr ""
+
+#: quicksand_auth/models.py:186
+msgid "users profiles"
+msgstr ""
+
+#: quicksand_auth/validators.py:11
+msgid ""
+"Usernames can only contain alphanumeric characters, periods and underscores."
+msgstr ""
+
+#: quicksand_auth/validators.py:18
+msgid "The username is already taken."
+msgstr ""
+
+#: quicksand_auth/validators.py:25
+msgid "An account for the email already exists."
+msgstr ""
+
+#: quicksand_auth/validators.py:32
+msgid "No user with the provided username exists."
+msgstr ""
+
+#: quicksand_auth/validators.py:39
+msgid "No user with the provided email exists."
+msgstr ""
+
+#: quicksand_auth/views/auth/views.py:82
+msgid "Token valid"
+msgstr ""
+
+#: quicksand_auth/views/auth/views.py:95
+msgid "Username available"
+msgstr ""
+
+#: quicksand_auth/views/auth/views.py:108
+msgid "Email available"
+msgstr ""
+
+#: quicksand_auth/views/auth/views.py:126
+msgid "Email verified"
+msgstr ""
+
+#: quicksand_auth/views/auth/views.py:164
+msgid "Password set successfully"
+msgstr ""
+
+#: quicksand_auth/views/auth/views.py:182
+msgid "A password reset link was sent to the email"
+msgstr ""
+
+#: quicksand_auth/views/authenticated_user/serializers.py:91
+msgid "New password must be supplied together with the current password"
+msgstr ""
+
+#: quicksand_auth/views/authenticated_user/serializers.py:94
+msgid "Current password must be supplied together with the new password"
+msgstr ""
+
+#: quicksand_auth/views/authenticated_user/views.py:86
+msgid "Goodbye 😔"
+msgstr ""
+
+#: quicksand_auth/views/authenticated_user/views.py:101
+msgid "Guidelines successfully accepted"
+msgstr ""
+
+#: quicksand_auth/views/authenticated_user/views.py:125
+msgid "Language successfully set"
+msgstr ""
+
+#: quicksand_common/models.py:7
+msgid "code"
+msgstr ""
+
+#: quicksand_common/serializers_fields/request.py:40
+#, python-format
+msgid "Please keep filesize under %s. Current filesize %s"
+msgstr ""
+
+#: quicksand_common/serializers_fields/request.py:50
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:694
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: quicksand_common/validators.py:10
+msgid "Names can't contain < or >."
+msgstr ""
+
+#: quicksand_common/validators.py:18
+msgid "No supported language with the provided id exists."
+msgstr ""
+
+#: quicksand_common/validators.py:26
+msgid "No supported language with the provided code exists."
+msgstr ""
+
+#: quicksand_invitations/models.py:17
+msgid "invited datetime"
+msgstr ""
+
+#: quicksand_invitations/models.py:77
+msgid "The token is invalid."
+msgstr ""
+
+#: quicksand_invitations/models.py:82
+msgid "No invite exists for given token."
+msgstr ""
+
+#: quicksand_invitations/models.py:87
+msgid "This invite has already been used."
+msgstr ""
+
+#: quicksand_invitations/models.py:97
+msgid "You've been invited to join Quicksand"
+msgstr ""
+
+#: quicksand_invitations/models.py:110
+msgid "You can be invited"
 msgstr ""
 
 #: venv/lib/python3.9/site-packages/django/contrib/messages/apps.py:15
@@ -566,12 +739,6 @@ msgstr[1] ""
 
 #: venv/lib/python3.9/site-packages/django/forms/fields.py:630
 msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
-
-#: venv/lib/python3.9/site-packages/django/forms/fields.py:694
-msgid ""
-"Upload a valid image. The file you uploaded was either not an image or a "
-"corrupted image."
 msgstr ""
 
 #: venv/lib/python3.9/site-packages/django/forms/fields.py:857
@@ -1266,4 +1433,8 @@ msgstr ""
 
 #: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:248
 msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/imagekit/admin.py:10
+msgid "Thumbnail"
 msgstr ""

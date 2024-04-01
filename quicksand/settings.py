@@ -98,7 +98,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'video_encoding'
 ]
 
 MIDDLEWARE = [
@@ -261,6 +262,21 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+VIDEO_ENCODING_FORMATS = {
+    'FFmpeg': [
+        {
+            'name': 'mp4_sd',
+            'extension': 'mp4',
+            'params': [
+                '-codec:v', 'libx264', '-crf', '20', '-preset', 'medium',
+                '-b:v', '1000k', '-maxrate', '1000k', '-bufsize', '2000k',
+                '-vf', 'scale=-2:480',  # http://superuser.com/a/776254
+                '-codec:a', 'aac', '-b:a', '128k', '-strict', '-2', '-preset', 'veryfast'
+            ],
+        },
+    ]
+}
 
 USERNAME_MAX_LENGTH = 30
 PROFILE_NAME_MAX_LENGTH = 192

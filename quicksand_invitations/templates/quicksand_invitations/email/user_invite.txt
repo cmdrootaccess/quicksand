@@ -1,0 +1,24 @@
+Hey,
+
+
+You've been invited by {{ invited_by_name }} to try the Quicksand Beta.
+
+Please follow the steps below to download and join Quicksand
+
+Step 1.
+If you're on an Apple iPhone
+1.a Download the TestFlight App using https://itunes.apple.com/us/app/testflight/id@
+1.b Then Install Quicksand using this link :https://testflight.apple.com/join/@
+
+If you're on an Android device:
+You can download and install the Quicksand App directly using this link: https://play.google.com/apps/testing/@
+
+Step 2.
+Once the app is installed, copy this link and paste it in the sign up form to setup up your account:
+{{ invite_link }}
+
+Learn more about Quicksand at https://quicksand.io
+
+Cheers,
+
+The Quicksand Team

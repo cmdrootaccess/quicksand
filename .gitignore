@@ -1,0 +1,12 @@
+/db.sqlite3
+.DS_Store
+.idea
+*.pyc
+/.env
+reports
+.coverage
+coverage.xml
+src/
+static/
+docker-compose.override.yml
+venv/
